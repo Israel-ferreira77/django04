@@ -9,3 +9,4 @@ class PessoaFormView(FormView):
     forms_class = PessoaForm
     model = Pessoa 
     success_url = reverse_lazy('/')
+    
