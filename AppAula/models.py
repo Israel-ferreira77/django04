@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Pessoa(models.Model):
+class PessoaModel(models.Model):
     nome = models.CharField(max_length=100)
     sobrenome = models.CharField(max_length=100)
 

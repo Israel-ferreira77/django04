@@ -1,8 +1,9 @@
-from rest_framework.serializers import ModelSerializer
-from .models import teste
+# AppAula/viewsets.py
 
+from rest_framework import viewsets
+from .models import Pessoa
+from .serializers import PessoaSerializer
 
-class (ModelSerializer):
-    class Meta:
-        models = ModelSerializer
-        fields = ['nome' 'sobrenome']
+class PessoaViewSet(viewsets.ModelViewSet):
+    queryset = Pessoa.objects.all()
+    serializer_class = PessoaSerializer
